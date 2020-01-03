@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use illuminate\support\Facades\DB;
 class ExampleController extends Controller
 {
     /**
@@ -9,7 +9,7 @@ class ExampleController extends Controller
      *
      * @return void
      */
-    public function __construct()
+  /*  public function __construct()
     {
         //
     }
@@ -21,6 +21,9 @@ class ExampleController extends Controller
             ->header('age','28')
             ->header('city','Rajshahi')
             ->header('username','Rupom');
+    }*/
+    function testConn(){
+        $dbname=DB::Connection()->select("SELECT * FROM details");
+        return $dbname;
     }
-    //
 }

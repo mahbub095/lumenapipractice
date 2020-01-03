@@ -21,7 +21,7 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 $app->configure('opendox');
-// $app->withFacades();
+ $app->withFacades();
 
 // $app->withEloquent();
 

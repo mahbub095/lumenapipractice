@@ -33,3 +33,4 @@ $router->get('/Second','MyController@Second');
 $router->get('/Download','MyController@Download');
 $router->post('/catch','MyController@catch');
 
+$router->get('/','ExampleController@testConn');
