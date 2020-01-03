@@ -6,13 +6,13 @@ class MyController extends controller
 {
 
 
-    public function My()
-    {
+    // function My()
+    //{
         //   return "My Name is ".$name;
-        $name = array("Volvo", "BMW", "Toyota");
+       /* $name = array("Volvo", "BMW", "Toyota");
 
         return response()
-            ->json($name);
+            ->json($name);*/
 
         /* return response($name)
 
@@ -25,5 +25,18 @@ class MyController extends controller
         /* public function My($name){
              return "My Name is ".$name;
          }*/
+
+        public function First()
+    {
+        return redirect('/Second');
+    }
+
+    public function Second(){
+        return "I am Second";
+    }
+
+    public function Download(){
+        $path='demo.txt';
+        return response()->download($path);
     }
 }
