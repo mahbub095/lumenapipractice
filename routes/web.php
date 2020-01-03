@@ -11,9 +11,9 @@
 |
 */
 
-$router->get('/', function () use ($router) {
+/*$router->get('/', function () use ($router) {
     return $router->app->version();
-});
+});*/
 $router->get('/get', function () use ($router) {
     return "I am get";
 });
@@ -27,4 +27,4 @@ $router->post('/mahbub', function ()  {
     return "I am Mahbub";
 });
 
-$router->get('/{name}','MyController@My');
+$router->get('/','MyController@My');
