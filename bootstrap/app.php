@@ -20,7 +20,7 @@ require_once __DIR__.'/../vendor/autoload.php';
 $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
-
+$app->configure('opendox');
 // $app->withFacades();
 
 // $app->withEloquent();
@@ -76,6 +76,7 @@ $app->singleton(
 |
 */
 
+$app->register(Noitran\Opendox\ServiceProvider::class);
 // $app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
