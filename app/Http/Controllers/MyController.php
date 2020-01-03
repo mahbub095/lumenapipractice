@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\User;
+use Illuminate\Http\Request;
 
 class MyController extends controller
 {
@@ -26,7 +27,7 @@ class MyController extends controller
              return "My Name is ".$name;
          }*/
 
-        public function First()
+    /*    public function First()
     {
         return redirect('/Second');
     }
@@ -38,5 +39,11 @@ class MyController extends controller
     public function Download(){
         $path='demo.txt';
         return response()->download($path);
+    }*/
+
+    function Catch(Request $request){
+        return $request;
+
     }
+
 }
