@@ -33,4 +33,9 @@ $router->get('/Second','MyController@Second');
 $router->get('/Download','MyController@Download');
 $router->post('/catch','MyController@catch');
 
-$router->get('/','ExampleController@testConn');
+//$router->get('/','ExampleController@testConn');
+
+$router->get('/details','DetailsController@DetailsSelect');
+$router->post('/details','DetailsController@DetailsCreate');
+$router->delete('/details','DetailsController@DetailsDelete');
+$router->put('/details','DetailsController@DetailsUpdate');

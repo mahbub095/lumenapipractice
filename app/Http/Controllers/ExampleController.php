@@ -22,8 +22,9 @@ class ExampleController extends Controller
             ->header('city','Rajshahi')
             ->header('username','Rupom');
     }*/
-    function testConn(){
+  /*  function testConn(){
         $dbname=DB::Connection()->select("SELECT * FROM details");
+        $dbname=DB::select("SELECT * FROM details");
         return $dbname;
-    }
+    }*/
 }
